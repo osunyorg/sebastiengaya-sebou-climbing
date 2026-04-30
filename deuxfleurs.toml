@@ -1,0 +1,36 @@
+[[cors]]
+allowed_origins = "*"
+allowed_methods = ["GET", "POST"]
+allowed_headers = "*"
+
+[[headers]]
+for = ["**/*.woff2", "**/*.woff", "**/*.svg", "**/*.ttf", "**/*.otf", "**/*.eot", "**/*.js", "**/*.css"]
+compress = "gzip"
+[headers.values]
+Cache-Control = "max-age=31536000, no-transform, public"
+
+[[headers]]
+for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
+[headers.values]
+Cache-Control = "max-age=31536000, no-transform, public"
+
+[[redirects]]
+from = "/actualites/2023-01-27-seance-du-22-janvier-2023/index.html"
+to = "/actualites/2023-01-23-seance-du-22-janvier-2023/"
+
+[[redirects]]
+from = "/actualites/2025-05-30-test-actualite-future/index.html"
+to = "/actualites/2025-05-28-test-actualite-future/"
+
+[[redirects]]
+from = "/actualites/2023-01-26-seance-du-19-janvier-2023/index.html"
+to = "/actualites/2023-01-20-seance-du-19-janvier-2023/"
+
+[[redirects]]
+from = "/actualites/2022/12/30/seance-du-29-decembre-2022/index.html"
+to = "/actualites/2022-12-30-seance-du-29-decembre-2022/"
+
+[[redirects]]
+from = "/actualites/2023-01-27-seance-du-24-janvier-2023/index.html"
+to = "/actualites/2023-01-25-seance-du-24-janvier-2023/"
+
