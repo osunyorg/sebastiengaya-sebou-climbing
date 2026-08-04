@@ -1,4 +1,5 @@
 theme: osuny
+_merge: deep
 params:
   logo:
     header: "/assets/images/logo.png"
